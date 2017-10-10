@@ -1,0 +1,36 @@
+@CHARSET "UTF-8";
+
+
+<!-- CSS goes in the document HEAD or added to your external stylesheet -->
+
+table.altrowstable {
+	font: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333333;
+	border-width: 2px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+
+table.altrowstable th {
+	border-width: 2px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+
+table.altrowstable td {
+	border-width: 2px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+
+.oddrowcolor {
+	background-color: #77c4a7;
+}
+
+.evenrowcolor {
+	background-color: #7cc781;
+}
+

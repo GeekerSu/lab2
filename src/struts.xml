@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <constant name="struts.devMode" value="true" />
+   <!-- 声明包名、类名 -->
+   <package name="com.action" extends="struts-default">
+      <action name="JDBCOperation" 
+         class="com.action.JDBCOperation"
+         >
+         <!-- 对各种action返回值作链接jsp页面处理 -->
+         <result name="showAllBooks">/showAllBooks.jsp</result>
+         <result name="showAllAuthors">/showAllAuthors.jsp</result>
+         <result name="searchOnesBooks">/searchingResult.jsp</result>
+         <result name="showOnesBooks">/showOnesBooks.jsp</result>
+         <result name="updateBookInfoPr">/updateBookDB.jsp</result>
+         <result name="AddABookPr">/addBook.jsp</result>
+         <result name="errorISBN">/ISBNconfliction.jsp</result>
+         <result name="errorAuthorID">/AuthorIDconfliction.jsp</result>
+         <result name="nullinfo">/nullinfo.jsp</result>
+         <result name="error">/wrongmsg.jsp</result>
+         <result name="noBooks">/noBooks.jsp</result>
+      </action>
+   </package>
+</struts>
